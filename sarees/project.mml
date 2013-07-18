@@ -1,0 +1,111 @@
+{
+  "bounds": [
+    64.8194,
+    3.6669,
+    101.5137,
+    37.6316
+  ],
+  "center": [
+    79.8926,
+    22.9381,
+    5
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "districts",
+    "template_teaser": "{{{SareeCode}}}",
+    "fields": [
+      "SareeCode"
+    ]
+  },
+  "minzoom": 5,
+  "maxzoom": 12,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "rainbow"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape",
+        "id": "countries",
+        "project": "sarees",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "extent": [
+        -179.99978348919961,
+        -85.051,
+        180,
+        83.63381093402975
+      ],
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        68.18624877929705,
+        8.130230859183664,
+        97.41516113281261,
+        35.683404049643244
+      ],
+      "id": "districtssareegrp",
+      "class": "",
+      "Datasource": {
+        "file": "layers\\districts_saree_grp.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "districtssareegrp"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        68.18624877929705,
+        6.79935058917391,
+        97.41516113281261,
+        35.68340404964324
+      ],
+      "id": "districts",
+      "class": "",
+      "Datasource": {
+        "file": "layers/districts.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "districts",
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        69.49261602683721,
+        8.353070070782994,
+        89.87756832790467,
+        33.432394358304435
+      ],
+      "id": "indiastates",
+      "class": "",
+      "Datasource": {
+        "file": "layers/india_states.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "indiastates"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "",
+  "description": "",
+  "attribution": "",
+  "legend": ""
+}
